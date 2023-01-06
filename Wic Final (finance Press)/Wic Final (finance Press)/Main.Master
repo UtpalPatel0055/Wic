@@ -1,0 +1,193 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Wic_Final__finance_Press_.Main" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <title>Blue Diamond</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- css file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- Responsive stylesheet -->
+    <link rel="stylesheet" href="css/responsive.css"/>
+    <!-- Title -->
+    <!-- Favicon -->
+    <link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
+    <link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="wrapper">
+	    <div id="preloader" class="preloader">
+		    <div id="pre" class="preloader_container">
+                <div class="preloader_disabler btn btn-default" style="background-color:#054d9a; color:white">Disable Preloader</div>
+		    </div>
+	    </div>
+
+        <div class="header-top style2 ulockd-bgthm" style="background-color:#054d9a">
+  		    <div class="container">
+  			    <div class="row">
+  				    <div class="col-md-12 ulockd-pad30">
+  					    <div class="welcm-ht text-right">
+						    <ul class="list-inline ulockd-mrgn60">
+							    <li>
+								    <div class="dropdown lang-button text-center">
+									    <button class="dropbtn color-white"><i class="fa fa-globe color-white"></i> Language</button>
+									    <div class="dropdown-content" style="background-color:#054d9a">
+									        <a href="#" style="color:white"><span><img src="images/resource/english.jpg" alt=""/></span>&nbsp;English&nbsp;</a>
+									        <a href="#" style="color:white"><span><img src="images/resource/india.jpg" alt=""/></span>&nbsp;Gujarati&nbsp;</a>
+									    </div>
+								    </div>
+							    </li>
+						    </ul>
+  					    </div>
+  				    </div>
+  			    </div>
+  		    </div>
+  	    </div>
+
+	    <!-- Header Styles -->
+	    <header class="header-nav">
+		    <div class="main-header-nav navbar-scrolltofixed">
+			    <div class="container">
+			        <nav class="navbar navbar-default bootsnav menu-style1">					    
+			            <div class="container ulockd-pdng0">
+			                <!-- Start Header Navigation -->
+			                <div class="navbar-header">			           
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+			                        <i class="fa fa-bars"></i>
+			                    </button>         
+			                    <a class="navbar-brand ulockd-main-logo2" href="Home.aspx">
+			                        <img src="images/wiclogo.jpg" class="logo logo-scrolled" alt="header-logo2.png" height="60px" width="60px">
+			                    </a>
+			                </div>
+			                <!-- End Header Navigation -->
+
+			                <!-- Collect the nav links, forms, and other content for toggling -->
+			                <div class="collapse navbar-collapse" id="navbar-menu">
+			                    <ul class="nav navbar-nav navbar-center" data-in="fadeIn">
+			                        <li><a href="Home.aspx" class="active">Home</a></li>
+			                        <li class="dropdown">
+			                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us</a>
+			                            <ul class="dropdown-menu">
+										    <li><a href="DeveloperNotes.aspx">Developer Notes</a></li>
+										    <li><a href="WhyInvestWithUs.aspx">Why Invest with Us</a></li>
+										    <li><a href="WhyWeChooseAmbaji.aspx">Why We Choose Ambaji</a></li>										    
+			                            </ul>
+			                        </li>
+			                        <li class="dropdown">
+			                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Amenities</a>
+			                            <ul class="dropdown-menu">
+										    <li><a href="BuildingOverview.aspx">Building Overview</a></li>
+										    <li><a href="HotelAmenities.aspx">Hotel Amenities</a></li>
+										    <li><a href="RoomAmenities.aspx">Room Amenities</a></li>
+			                            </ul>
+			                        </li>
+			                        <li><a href="IncomeSource.aspx">Income Source</a></li>
+			                        <li><a href="UnitAllocated.aspx">Unit Allocated</a></li>
+			                        <li><a href="BecomePartner.aspx">Become Partner</a></li>
+			                        <li><a href="ContactUs.aspx">Contact Us</a></li>			                        
+			                    </ul>
+			                </div>
+			            </div>
+			        </nav>
+			    </div>
+		    </div>
+	    </header>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">        
+        </asp:ContentPlaceHolder>
+
+        <!-- Our Footer -->
+	    <section class="ulockd-footer ulockd-pdng0">
+		<div class="container footer-padding">
+			<div class="row">				
+				<div class="col-xxs-12 col-xs-6 col-sm-4 col-md-4">
+					<div class="font-icon-social text-center">
+						
+					</div>
+				</div>
+                <div class="col-xxs-12 col-xs-6 col-sm-4 col-md-4">
+					<div class="logo-widget tac-xxsd">
+						<img src="images/blue pakshik.png" alt="footer-logo.png" height="100px" width="350px"/>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					
+				</div>
+			</div>
+			<hr/>
+			
+			<div class="row">
+				<div class="col-xxs-12 col-xs-4 col-sm-4 col-md-4">
+					<div class="mail-widget text-center">
+						<span class="icon fa fa-envelope"></span>
+						<h3>Mail Us</h3>
+						<p>info.worldindiancoorporation.com</p>
+					</div>
+				</div>
+				<div class="col-xxs-12 col-xs-4 col-sm-4 col-md-4">
+					<div class="call-widget text-center">
+						<span class="icon fa fa-phone"></span>
+						<h3>Call Us</h3>
+						<p>+91-999-888-4349</p>
+					</div>
+				</div>
+				<div class="col-xxs-12 col-xs-4 col-sm-4 col-md-4">
+					<div class="location-widget text-center">
+						<span class="icon fa fa-map-signs"></span>
+						<h3>Find Us</h3>
+						<p>SV Square, New Ranip, Ahmedabad.</p>
+					</div>
+				</div>
+			</div>
+			<hr class="ulockd-mrgn60">
+		</div>
+		<div class="ulockd-copy-right" style="background-color:#054d9a">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p class="color-white">World Indian Coorporation &nbsp; Copyright© 2021. All right reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <a class="scrollToHome ulockd-bgthm" href="#" style="background-color:#054d9a"><i class="fa fa-home"></i></a>
+    </div>
+    </form>
+    <!-- Wrapper End -->
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootsnav.js"></script>
+    <script type="text/javascript" src="js/parallax.js"></script>
+    <script type="text/javascript" src="js/scrollto.js"></script>
+    <script type="text/javascript" src="js/jquery-scrolltofixed-min.js"></script>
+    <script type="text/javascript" src="js/jquery.counterup.js"></script>
+    <script type="text/javascript" src="js/gallery.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/video-player.js"></script>
+    <script type="text/javascript" src="js/jquery.barfiller.js"></script>
+    <script type="text/javascript" src="js/jflickrfeed.min.js"></script>
+    <script type="text/javascript" src="js/timepicker.js"></script>
+    <script type="text/javascript" src="js/tweetie.js"></script>
+    <!-- Custom script for all pages --> 
+    <script type="text/javascript" src="js/color-switcher.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
